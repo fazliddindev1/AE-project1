@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: #204bff;
+    box-shadow:  0 4px 15px rgb(0, 0, 250);
+}
+.navbar h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.main-header img{
+    margin-left: 60px;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    flex: 1;
+}
+.navmenu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    justify-content: space-around;
+}
+.navmenu ul li::after{
+    display: block;
+    justify-content: space-around;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    margin: auto;
+    transition: 0.5s;
+}
+.navmenu ul li:hover::after{
+    width: 100%;
+}
+.navmenu ul li a{
+    color: #f8fffd;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.main-header{
+    width: 75px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 25px 25px;
+    top: 50px;
+}
+
+
+.main-header h3{
+    font-size: 20px;
+    color: #5a21ff;
+    font-weight: 550;
+}
+
+.main-header h2{
+    font-size: 30px;
+    width: 340px;
+    margin-top: 10px;
+    margin-bottom: 24px;;
+}
+
+.main-header p{
+    margin-bottom: 60px;
+}
+
+.main-header .btn{
+    background: #5a21ff;
+    border: 1px solid #5a21ff;
+    font-size: 24px;
+    color: #f8fffd;
+    font-weight: 400;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.main-header .btn:hover{
+    color: #204bff;
+    background: #f8fffd;
+}
+
+.cat-header{
+    text-align: center;
+    padding: 20px 0;
+}
+
+section{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 150px;
+}
+.cat-header h2{
+    font-size: 38px;
+    padding-bottom: 14px;
+}
+.books h5{
+    font-size: 20px;
+}
+.books h4{
+    font-size: 25px;
+}
+.cat-books{
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.cat-books .books{
+    width: 400px;
+    height: auto;
+    padding: 20px 30px;
+    position: relative;
+    display: inline-block;
+    margin: 5px 5px;
+    border: 2px solid blue;
+
+}
+.cat-books .books .book-img{
+    background-color: #f8fffd;
+    padding: 15px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.cat-books .books img{
+    width: 100%;
+    margin-left: -80px;
+}
+
+.cat-books .books p{
+    font-size: 18px;
+    padding-top: 10px;
+    display: inline;
+}
+
+
+.blog-header{
+    text-align: center;
+    font-size: 35px;
+    padding: 40px 40px;
+}
+
+.set-row .col{
+    padding: 20px 20px;
+    width: 480px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 160px;
+}
+
+.set-row .col img{
+    width: 90%;
+    border-radius: 20px;
+}
+
+.set-row .col h4{
+    font-size: 24px;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+.set-row .col p{
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.set-row .col a{
+    font-size: 20px;
+    color: white;
+    background-color: #3834b6;
+    padding: 5px 5px;
+}
+
+.set-row .col a:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px 5px;
+    padding: 5px 5px;
+}
+
+.set-row .col .dates{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+.set-row .col .dates span{
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+
+
+.contact{
+    padding: 60px 13%;
+    background: #b2b4b6;
+}
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,auto));
+    gap: 2rem;
+}
+.contact-content img{
+    height: auto;
+    width: 190px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-content li{
+    margin-bottom: 18px;
+}
+
+.contact-content li a {
+    display: block;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all .40s ease;
+}
+.contact-content li a:hover{
+    transform: translateX(10px);
+    color: black;
+}
+
+.last-text p{
+    text-align: center;
+    padding: 18px;
+    color: black;
+}
